@@ -1,0 +1,52 @@
+.fields {
+    display: flex;
+    flex-flow: row;
+    margin-bottom: 10px;
+}
+
+.field {
+    margin-left: 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.selectors {
+    display: flex;
+    flex-flow: row;
+    margin-bottom: 10px;
+}
+
+.btn {
+    border: 2px solid black;
+    font-weight: bold;
+}
+
+.btn:enabled {
+    background: white;
+}
+
+.btn:disabled {
+    background: darkgray;
+}
+
+.custom-select {
+    width: 218.667px;
+}
+
+.form {
+    margin-left: -10px;
+}
+
+.cont {
+    border: 3px solid black;
+    padding: 25px;
+    border-radius: 5px;
+    background: rgb(248, 248, 248);
+}
+
+.title {
+    margin-bottom: 20px;
+    margin-top: -10px;
+    font-weight: bold;
+    font-size: x-large;
+}

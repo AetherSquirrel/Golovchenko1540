@@ -1,0 +1,51 @@
+<div class="main" *ngIf="students.length > 0">
+    <div class="title">
+      <h5>{{title}}</h5>
+    </div>
+    <div class="table" *ngFor="let student of students">
+      <form [formGroup]="student.form">
+        <div class="local">
+          <div class="field">
+            <label for="id" class="label">ID</label>
+            <div class="form-control" id="id">{{student.id}}</div>
+          </div>
+          <div class="field">
+            <label for="name">Name</label> <input type="text" class="form-control" formControlName="name"
+              placeholder="Name" id="name">
+          </div>
+          <div class="field">
+            <label for="surname">Surname</label> <input type="text" class="form-control" formControlName="surname"
+              placeholder="Surname" id="surname">
+          </div>
+          <div class="field">
+            <label for="mid">Middle Name</label> <input type="text" class="form-control" formControlName="middlename"
+              placeholder="Middle Name" id="mid">
+          </div>
+          <div class="field">
+            <label for="email">E-Mail</label> <input type="text" class="form-control" formControlName="email"
+              placeholder="E-Mail" id="email" [textMask]="{mask: emailMask}">
+          </div>
+          <div class="field">
+            <label for="phone">Phone</label> <input type="text" class="form-control" formControlName="phone"
+              [textMask]="{mask: mask, showMask: true}" id="phone">
+          </div>
+          <div class="field">
+            <label for="birth">Birth Date</label> <input type="text" class="form-control" formControlName="birth"
+              [textMask]="{mask: birthmask, showMask: true}" id="birth">
+          </div>
+          <div class="field">
+            <label for="group">Group</label> <input type="text" class="form-control" formControlName="group" id="group">
+          </div>
+          <div class="field">
+            <label for="direction">Direction</label> <input type="text" class="form-control" formControlName="direction" id="direction">
+          </div>
+          <div class="field">
+            <button class="btn" (click)="onRedact(this.student)">Edit</button>
+            <button class="btn" (click)="onSave(this.student)"
+              [disabled]="student.form.disabled || student.form.invalid">Save</button>
+            <button (click)="onDelete(student.id)" class="btn">Delete</button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>

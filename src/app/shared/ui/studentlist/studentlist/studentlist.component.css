@@ -1,0 +1,59 @@
+.btn {
+    border: 3px solid black;
+    height: 45px;
+    margin-right: 10px;
+    width: 90px;
+    font-weight: 500;
+    margin-top: -5px;
+}
+
+.title {
+    font-weight: bold;
+    display: inline-block;
+}
+
+.form-control{
+    margin-bottom: 10px;
+}
+
+.table {
+    margin-left: 15px;
+    padding:10px;
+    padding-left:0px;
+    width: 103%;
+}
+
+.buttons {
+    margin-top: -5px;
+    margin-left: 10px;
+    width: 100px;
+}
+
+.header {
+    width: 100%;
+    margin-left: 15px;
+}
+
+.field {
+    display: inline-block;
+    flex-flow: row;
+    margin-right: 30px;
+}
+
+.main{
+    margin-left: -15px;
+    width: 100%;
+}
+
+.local{
+    width:100%;
+    
+}
+
+#age{
+    width:70px;
+}
+
+.custom-select{
+    margin-top:-5px;
+}

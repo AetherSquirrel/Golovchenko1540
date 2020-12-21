@@ -1,0 +1,35 @@
+<div class="cont">
+    <form [formGroup]="form" class="form">
+        <div class="fields">
+            <div class="field">
+                <input type="text" class="form-control" formControlName="name" placeholder="Name">
+            </div>
+            <div class="field">
+                <input type="text" class="form-control" formControlName="surname" placeholder="Surname">
+            </div>
+            <div class="field">
+                <input type="text" class="form-control" formControlName="middlename" placeholder="Middle Name">
+            </div>
+            <div class="field">
+                <input type="text" class="form-control" formControlName="email" placeholder="E-Mail">
+            </div>
+        </div>
+        <div class="selectors">
+            <div class="field">
+                <input type="text" class="form-control" formControlName="phone"
+                    [textMask]="{mask: mask, showMask: true}">
+            </div>
+            <div class="field">
+                <input type="text" class="form-control" formControlName="birth"
+                    [textMask]="{mask: birthmask, showMask: true}">
+            </div>
+        </div>
+        <div class="field">
+            <input type="text" class="form-control" formControlName="group" placeholder="Group">
+        </div>
+        <div class="field">
+            <input type="text" class="form-control" formControlName="direction" placeholder="Direction">
+        </div>
+    </form>
+    <button class="btn" (click)="onAddStudent()" [disabled]="form.invalid">Add student</button>
+</div>

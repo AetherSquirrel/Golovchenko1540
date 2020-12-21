@@ -1,0 +1,37 @@
+{
+  "students": [
+    {
+      "id": 2,
+      "name": "b",
+      "surname": "b",
+      "middlename": "b",
+      "phone": "83333333333",
+      "email": "b@b.b",
+      "birth": "22/22/2222",
+      "direction": "Cars",
+      "group": "181-999"
+    },
+    {
+      "id": 3,
+      "name": "c",
+      "surname": "c",
+      "middlename": "c",
+      "phone": "82222222222",
+      "email": "c@c.c",
+      "birth": "44/44/4444",
+      "direction": "Trains",
+      "group": "115-698"
+    },
+    {
+      "id": 4,
+      "name": "a",
+      "surname": "a",
+      "middlename": "a",
+      "phone": "84534534012",
+      "email": "a@A.g",
+      "birth": "22/33/5484",
+      "direction": "Planes",
+      "group": "885-920"
+    }
+  ]
+}

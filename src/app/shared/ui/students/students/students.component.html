@@ -1,0 +1,11 @@
+<div class="container" *ngIf="isLoaded">
+        <app-studentadd (addStudent)="onAdd($event)"></app-studentadd>
+        <div class="filter">
+            <input type="text" class="form-control" placeholder="Group filter" [(ngModel)]="group">
+        </div>
+        <div class="filter">
+            <input type="text" class="form-control" placeholder="Direction filter" [(ngModel)]="direction">
+        </div>
+        <button class="btn" (click)="sort()">Sort by name</button>
+        <app-studentlist [students]="getByID() | pipe:group:direction" (delete)="onDelete($event)" (save)="onSave($event)" id="app-NR"></app-studentlist>
+</div> 
